@@ -207,9 +207,10 @@ header
 */
 
 .sub-header {
-  background-color: #1f272b;
+  background-color: rgb(50,0,0);
   position: relative;
   z-index: 1111;
+  opacity: unset;
 }
 
 .sub-header .left-content p {
