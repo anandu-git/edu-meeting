@@ -86,3 +86,23 @@ new head
 #btnthree{
     margin: 3px;
 }
+
+/* logo div */
+
+.symbol-container {
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+  }
+  
+  .symbol {
+    width: calc(100% / 12);
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .symbol {
+      width: calc(100% / 4);
+    }
+  }
+  

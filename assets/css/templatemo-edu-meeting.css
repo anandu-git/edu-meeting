@@ -207,7 +207,7 @@ header
 */
 
 .sub-header {
-  background-color: rgb(50,0,0);
+  background-color: rgb(41, 41, 41);
   position: relative;
   z-index: 1111;
   opacity: unset;
