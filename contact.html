@@ -9,10 +9,12 @@
     <meta name="author" content="Template Mo">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <title>Education - List of Meetings</title>
+    <title>Vista Global - The hub of international education</title>
+    <link rel="icon" type="image/gif" href="assets/images/new/logo.png">
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
     <!-- Additional CSS Files -->
@@ -88,7 +90,7 @@
         <div class="col-lg-9 align-self-center">
           <div class="row">
             <div class="col-lg-12">
-              <form id="contact" action="" method="post">
+              <form id="submit-form" action="" method="post">
                 <div class="row">
                   <div class="col-lg-12">
                     <h2>Let's get in touch</h2>
@@ -100,19 +102,19 @@
                   </div>
                   <div class="col-lg-4">
                     <fieldset>
-                      <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="YOUR CONTACT NUMBER..."
+                      <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="YOUR EMAIL...*"
                         required="">
                     </fieldset>
                   </div>
                   <div class="col-lg-4">
                     <fieldset>
-                      <input name="subject" type="text" id="subject" placeholder="YOUR EMAIL...*" required="">
+                      <input name="phone" type="text" id="phone" placeholder="YOUR CONTACT NUMBER...*" required="">
                     </fieldset>
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
                       <textarea name="message" type="text" class="form-control" id="message"
-                        placeholder="YOUR MESSAGE..." required=""></textarea>
+                        placeholder="YOUR MESSAGE...*" required=""></textarea>
                     </fieldset>
                   </div>
                   <div class="col-lg-12">
@@ -218,6 +220,29 @@
           checkSection();
         });
     </script>
+
+    <!-- email response -->
+
+
+  <script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbxoR8GVcGz4hBhzgYi3CjCyRpGVxQcldrF5da5O7hG9pgKnHRgnt6NPgaffOVceWcxdCg/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+</script>
 </body>
 
 
