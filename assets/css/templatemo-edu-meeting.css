@@ -1583,60 +1583,30 @@ section.meetings-page .pagination ul li a:hover {
 
 .meeting-single-item .thumb {
   position: relative;
+  height: 100px;
 }
 
 .meeting-single-item .thumb img {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+ 
 }
 
-.meeting-single-item .thumb .price {
-  position: absolute;
-  left: 20px;
-  top: 20px;
-}
 
-.meeting-single-item .thumb .price span {
-  font-size: 16px;
-  color: #1f272b;
-  font-weight: 600;
-  background-color: rgba(250,250,250,0.9);
-  padding: 7px 12px;
-  border-radius: 10px;
-}
 
 .meeting-single-item .down-content {
   background-color: #fff;
   padding: 40px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  
 }
 
-.meeting-single-item .thumb .date {
-  position: absolute;
-  background-color: rgba(250,250,250,0.9);
-  width: 80px;
-  height: 80px;
-  text-align: center;
-  padding: 15px 0px;
-  border-radius: 10px;
-  right: 20px;
-  top: 20px;
+#imgcour{
+  height: 200px;
 }
 
-.meeting-single-item .thumb .date h6 {
-  font-size: 13px;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #a12c2f;
-}
 
-.meeting-single-item .thumb .date span {
-  display: block;
-  color: #1f272b;
-  font-size: 22px;
-  margin-top: 7px;
-}
 
 .meeting-single-item .down-content h4 {
   font-size: 22px;
