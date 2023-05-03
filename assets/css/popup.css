@@ -112,11 +112,6 @@ new head
     
   }
   
-  @media only screen and (max-width: 600px) {
-    .symbol {
-      width: calc(100% / 4);
-    }
-  }
 
 
   #soc{
@@ -253,4 +248,8 @@ new head
 
 #imgcour{
   height: 200px;
+}
+
+#logoimghead{
+  visibility: hidden;
 }
