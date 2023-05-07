@@ -176,9 +176,11 @@ new head
   }
   
   p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 0;
+	font-size: 14px;
+	line-height: 1.5;
+	margin-bottom: 0;
+	font-family: Arial, sans-serif;
+	text-align: justify;
   }
   
 
@@ -208,11 +210,12 @@ new head
     line-height: 3rem;
 }
 .footer-content p{
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-    font-size: 14px;
-    color: #cacdd2;
+	max-width: 500px;
+	margin: 10px auto;
+	line-height: 28px;
+	font-size: 14px;
+	color: #cacdd2;
+	text-align: center;
 }
 .socials{
     list-style: none;

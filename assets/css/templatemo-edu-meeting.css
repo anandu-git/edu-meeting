@@ -38,10 +38,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
 s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
 figure, header, nav, section, article, aside, footer, figcaption {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	color: #FFF;
 }
 
 .clearfix:after {
@@ -207,10 +208,11 @@ header
 */
 
 .sub-header {
-  background-color: rgb(41, 41, 41);
-  position: relative;
-  z-index: 1111;
-  opacity: unset;
+	background-color: rgb(41, 41, 41);
+	position: relative;
+	z-index: 1111;
+	opacity: unset;
+	color: #393;
 }
 
 .sub-header .left-content p {
@@ -684,10 +686,12 @@ banner
 */
 
 .main-banner {
-  position: relative;
-  max-height: 100%;
-  overflow: hidden;
-  margin-bottom: -7px;
+	position: relative;
+	max-height: 100%;
+	overflow: visible;
+	margin-bottom: -7px;
+	background-color: #33CC66;
+	
 }
 
 #bg-video {
@@ -696,7 +700,10 @@ banner
     max-width: 100%;
     max-height: 100vh;
     object-fit: cover;
-    z-index: -1;
+    z-index: auto;
+	filter : brightness(150%);
+	filter : contrast(170%);
+
 }
 
 #bg-video::-webkit-media-controls {
@@ -806,10 +813,11 @@ services
 }
 
 .services .item h4 {
-  margin-top: 25px;
-  margin-bottom: 15px;
-  font-size: 18px;
-  font-weight: 600;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #FFF;
 }
 
 .services .item p {
@@ -890,7 +898,27 @@ services
   border-radius: 50%;
   line-height: 50px;
 }
+/*
+---------------------------------------------
+image elarge
+---------------------------------------------
+*/
+.thumbnail { 
+top:-50px; 
+left:-35px; 
+display:block; 
+z-index:999; 
+cursor: pointer; 
+-webkit-transition-property: all; 
+-webkit-transition-duration: 0.3s; 
+-webkit-transition-timing-function: ease; 
+} 
 
+/*change the number below to scale to the appropriate size*/ 
+.thumbnail:hover { 
+transform: scale(3); 
+
+}
 
 /*
 ---------------------------------------------
@@ -1020,9 +1048,10 @@ section.upcoming-meetings .categories .main-button-red a {
 }
 
 .meeting-item .down-content p {
-  margin-left: 50px;
-  color: #1f272b;
-  font-size: 14px;
+	margin-left: 50px;
+	color: #F00;
+	font-size: 14px;
+	text-align: justify;
 }
 
 #soc{
@@ -1072,7 +1101,7 @@ section.apply-now .item p {
   margin-left: 45px;
 }
 .accordions .accordion {
-  border-bottom: 1px solid #eee;
+  
 }
 .accordions .last-accordion {
   border-bottom: none;
@@ -1084,7 +1113,7 @@ section.apply-now .item p {
   color: #1f272b;
   cursor: pointer;
   transition: color 200ms ease-in-out;
-  border-bottom: 1px solid #fff;
+ 
 }
 @media screen and (min-width: 768px) {
   .accordion-head {
@@ -1107,7 +1136,7 @@ section.apply-now .item p {
   overflow: hidden;
   height: 0;
   transition: height 300ms ease-in-out;
-  border-bottom: 1px solid #fff;
+  
 }
 .accordion-body > .content {
   padding: 20px;
@@ -1340,7 +1369,7 @@ contact us
 */
 
 section.contact-us {
-  background-image: url(../images/meetings-bg.jpg);
+  background-image: url(../images/meetings-page-bg.jpg);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1351,7 +1380,7 @@ section.contact-us {
 section.contact-us #submit-form {
   background-color: #fff;
   border-radius: 20px;
-  padding: 40px;
+  padding:105px;
 }
 
 section.contact-us #submit-form h2 {
@@ -1468,10 +1497,19 @@ section.contact-us .right-info ul li span {
 heading page
 ---------------------------------------------
 */
+section.heading-page-enqry{
+  background-image: url(../images/meetings-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 0px;
+  text-align: center;
 
+}
 section.heading-page {
-  background-image: url(../images/heading-bg.jpg);
-  background-position: center center;
+  /*background-image: url(../images/heading-bg.jpg); */
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 230px;
